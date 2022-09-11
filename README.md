@@ -18,4 +18,4 @@ Programming:
 * Android Jetpack
 * Navigation Graph
 
-![Alt text] (https://github.com/deepak1945/Goldman-Nasa-Apod/blob/master/app/src/main/res/drawable/pic1.jpg)
+![Alt text] (/deepak1945/Goldman-Nasa-Apod/blob/master/app/src/main/res/drawable/pic1.jpg)
