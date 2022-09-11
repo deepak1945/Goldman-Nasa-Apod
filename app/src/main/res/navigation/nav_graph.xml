@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.goldmen.android.nasa_apod.ui.main.MainFragment"
+        android:label="@string/mainFragmentTitle"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_main_to_detail"
+            app:destination="@id/nav_detail"
+            app:popUpTo="@id/nav_main" />
+        <action
+            android:id="@+id/action_nav_main_to_favoriteItemsFragment"
+            app:destination="@id/favoriteItemsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.goldmen.android.nasa_apod.ui.detail.DetailFragment"
+        android:label="@string/detailFragmentTitle"
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="detailEntity"
+            app:argType="com.goldmen.android.nasa_apod.model.ApodEntity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteItemsFragment"
+        android:name="com.goldmen.android.nasa_apod.ui.favorite.FavoriteItemsFragment"
+        android:label="@string/favoriteFragmentTitle" />
+
+</navigation>

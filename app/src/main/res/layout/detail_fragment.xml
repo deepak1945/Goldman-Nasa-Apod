@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- <data>
+
+         <variable
+             name="entity"
+             type="com.example.android.nasa_apod.model.ApodEntity" />
+     </data>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/df_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/df_title"
+                app:layout_constraintTop_toBottomOf="@+id/df_image" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/df_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="16dp"
+                android:drawableTint="?android:drawableTint"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:padding="16dp"
+                android:textColor="?android:textColorPrimary"
+                app:drawableStartCompat="@drawable/ic_title"
+                app:layout_constraintBottom_toTopOf="@+id/df_copyright"
+                app:layout_constraintTop_toBottomOf="@+id/df_image" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/df_copyright"
+                app:layout_constraintTop_toBottomOf="@+id/df_title" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/df_copyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="16dp"
+                android:drawableTint="?android:drawableTint"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:textColor="?android:textColorPrimary"
+                app:drawableStartCompat="@drawable/ic_copyright"
+                app:layout_constraintBottom_toTopOf="@+id/df_date"
+                app:layout_constraintTop_toBottomOf="@+id/df_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/df_date"
+                app:layout_constraintTop_toBottomOf="@+id/df_copyright" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/df_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="16dp"
+                android:drawableTint="?android:drawableTint"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:textColor="?android:textColorPrimary"
+                app:drawableStartCompat="@drawable/ic_date"
+                app:layout_constraintBottom_toTopOf="@+id/df_explanation"
+                app:layout_constraintTop_toBottomOf="@+id/df_copyright" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@+id/df_explanation"
+                app:layout_constraintTop_toBottomOf="@+id/df_date" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/df_explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="16dp"
+                android:drawableTint="?android:drawableTint"
+                android:padding="16dp"
+                android:textColor="?android:textColorPrimary"
+                app:drawableStartCompat="@drawable/ic_explanation"
+                app:layout_constraintTop_toBottomOf="@+id/df_date" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

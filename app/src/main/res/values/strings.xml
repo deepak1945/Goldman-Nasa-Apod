@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Nasa Apod</string>
+
+    <!-- List UI -->
+    <string name="listEmpty">Oops. No entries found</string>
+
+    <!-- Main Fragment -->
+    <string name="mainFragmentTitle">Picture of the Day</string>
+    <string name="mainErrorEvent">Error occurred: %s</string>
+    <string name="mainErrorUnknown">Unknown</string>
+
+    <!-- Details Fragment-->
+    <string name="detailFragmentTitle">Details Screen</string>
+
+    <!--Favorite Fragment-->
+    <string name="favoriteFragmentTitle">Favorite Items</string>
+
+    <!-- Menu -->
+    <string name="menuRefresh">Refresh</string>
+    <string name="menuSettings">Settings</string>
+
+    <string name="apply_theme_title">Apply Theme</string>
+    <string name="dark_theme_mode">Dark Mode</string>
+    <string name="light_theme_mode">Light Mode</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="theme_mode_types">
+        <item>@string/light_theme_mode</item>
+        <item>@string/dark_theme_mode</item>
+        <item>@string/cancel</item>
+    </string-array>
+
+    <!--Test-->
+    <string name="loremShort">Lorem ipsum dolor sit amet</string>
+    <string name="loremMedium">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</string>
+    <string name="loremLong">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</string>
+
+</resources>
